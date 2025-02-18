@@ -119,15 +119,63 @@ body {
     width: 80%;
     margin: 0px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    div {
+    .animation-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 20px auto;
+        border: black solid 2px;
+        width: 700px;
+        padding: 20px;
+        transition: box-shadow 0.5s ease-in-out;
+
+        &:hover {
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5 );
+        }
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    p {
+        padding: 20px;
+        max-width: 40em;
+    }
+
+    .animation-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: black solid 2px;
+        width: 700px;
+        padding: 20px;
+
+        transition: box-shadow 0.5s ease-in-out;
+
+        &:hover {
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5 );
+        }
+    }
+
+    h3 {
+        text-align: center;
+        padding: 10px;
+        font-size: base.$header-text;
     }
         
+    .move-button {
+        background-color: base.$header-color;
+        padding: 20px;
+        font-size: base.$text-size;
+    }
 }
 
 /*selector inheritance for header and footer, extend to use on both header and footer*/

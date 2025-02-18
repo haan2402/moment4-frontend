@@ -23,3 +23,24 @@
     animation: moveText 3s infinite, changeTextColor 3s infinite;
     display: inline-block;
 }
+
+@keyframes moveBtn {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.move-button {
+    animation: moveBtn 5s infinite ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+.move-button:hover {
+    background-color: blue;
+}
