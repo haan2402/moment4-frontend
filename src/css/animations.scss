@@ -1,0 +1,25 @@
+@keyframes moveText {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(2, 3);
+    }
+}
+
+@keyframes changeTextColor {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+.text-animation {
+    animation: moveText 3s infinite, changeTextColor 3s infinite;
+    display: inline-block;
+}

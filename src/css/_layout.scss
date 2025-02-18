@@ -114,6 +114,22 @@ body {
     }
 }
 
+.animation-container {
+    background-color: base.$container-color;
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+        
+}
+
 /*selector inheritance for header and footer, extend to use on both header and footer*/
 .header-footer-bg {
     background-color: base.$header-color;
