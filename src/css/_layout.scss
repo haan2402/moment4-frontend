@@ -114,6 +114,7 @@ body {
     }
 }
 
+/*styling for animation container, center everything in middle of page*/
 .animation-container {
     background-color: base.$container-color;
     width: 80%;
@@ -124,6 +125,7 @@ body {
     justify-content: center;
     align-items: center;
 
+    /*added border around the div, when you hover the "box" you see shadow behind*/
     .animation-text {
         display: flex;
         flex-direction: column;
@@ -149,6 +151,7 @@ body {
         max-width: 40em;
     }
 
+    /*added border around the div, when you hover the "box" you see shadow behind, styling for button*/
     .animation-btn {
         display: flex;
         flex-direction: column;
@@ -179,6 +182,7 @@ body {
         cursor: pointer;
     }
 
+    /*added border around the div, when you hover the "box" you see shadow behind*/
     .rotate {
         display: flex;
         flex-direction: column;
@@ -196,6 +200,7 @@ body {
         }
     }
 
+    /*when you click button it will rotate 360deg*/
     .rotate-animation {
         background-color: blueviolet;
         color: white;

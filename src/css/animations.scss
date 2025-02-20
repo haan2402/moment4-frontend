@@ -1,3 +1,4 @@
+/*keyframe för att gå från orginalstorlek till 2x3 till första rubriken*/
 @keyframes moveText {
     from {
         transform: scale(1, 1);
@@ -7,6 +8,7 @@
     }
 }
 
+/*keyframe för att ändra i 3 olika färger*/
 @keyframes changeTextColor {
     0% {
         color: red;
@@ -19,11 +21,13 @@
     }
 }
 
+/*så att rubtiken får både keyframe för text och öndra färg*/
 .text-animation {
     animation: moveText 3s infinite, changeTextColor 3s infinite;
     display: inline-block;
 }
 
+/*keyframe för att flytta knappen i sidles, fram och tillbaka*/
 @keyframes moveBtn {
     0% {
         transform: translateX(-100px);
@@ -36,15 +40,18 @@
     }
 }
 
+/*för att knappen ska röra sig fram och tillbaka, transition för att övergången ska bli snyggare*/
 .move-button {
     animation: moveBtn 5s infinite ease-in-out;
     transition: transform 0.4s ease-in-out;
 }
 
+/*ändrar färg när man hover över knapp*/
 .move-button:hover {
     background-color: blue;
 }
 
+/*keyframe för att rotera knappen ett helt varv*/
 @keyframes rotateBtn {
     from {
         transform: rotate(0deg);
